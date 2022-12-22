@@ -1,0 +1,113 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color-bg:#1f1f38;
+    --color-bg-variant:#2c2c6c;
+    --color-primary:#4db5ff;
+
+    --color-primary-variant:rgba(77,181,255,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.6);
+}
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: black;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px soild var(--color-primary);
+    transition: var(--transition);
+    }
+.Wrapper{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+
+}
+.nav-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    border-radius: 8px;
+}
+.main{
+    border:none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-around;
+    background: whitesmoke;
+    border-radius: 8px;
+    box-shadow: inset 3px 3px 6px whitesmoke, inset 3px 3px 6px rgba(0, 0, 0, 0.179);
+}
+.form-container{
+    display: inline;
+    text-align: center;
+    border: none;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    width: 30%;
+    color:var(--color-white);
+    background: rgb(117, 117, 246);
+    border-radius: 8px;
+    box-shadow: inset 3px 3px 6px whitesmoke, inset 3px 3px 6px rgba(0, 0, 0, 0.179);
+}
+input{
+    width: 25vh;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 8px;
+    border-color: transparent;
+    box-shadow: inset 3px 3px 6px whitesmoke, inset 3px 3px 6px rgba(0, 0, 0, 0.179);
+ }
+.view-container{
+    display: inline;
+    text-align: center;
+    border:none;
+    margin: 20px 20px 20px 0px;
+    width: 35%;
+    color: var(--color-white);
+    background: rgb(117, 117, 246);
+    border-radius: 8px;
+    box-shadow: inset 3px 3px 6px whitesmoke, inset 3px 3px 6px rgba(0, 0, 0, 0.179);
+    }
+    .table{
+        border:none;
+        margin: 20px 20px 20px 30px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: inset 3px 3px 6px whitesmoke, inset 3px 3px 6px rgba(0, 0, 0, 0.179);
+        }
+    @media screen  and (max-width:1024px){
+        .main{
+            width: 90%;
+        }
+        .view-container{
+            width:40%;
+           }
+ }
+ @media screen  and (max-width:714px){
+    .view-container{
+        font-size: 4vw;
+        width: 89%;
+        margin: 5px;
+        }
+    .form-container{
+        padding:10px;
+        width: 105%;
+    
+    }
+    .table{
+         margin: 20px 20px 20px 5px;
+        }
+    .main{
+        width: 95%;
+    }
+}
